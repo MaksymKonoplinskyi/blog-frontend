@@ -16,7 +16,7 @@ export const CommentsBlock = ({ items, curentUserId }) => {
   const editCommentIndex = useSelector(
     state => state.fullPost.comments.editCommentIndex)
   return (
-    <Paper title="Комментарии">
+    <Paper title="Комментарии2">
 
       <List>
         {items.map((obj, index) => (

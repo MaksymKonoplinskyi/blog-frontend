@@ -20,6 +20,9 @@ export const CommentsBlock = ({ items, curentUserId }) => {
     <Paper title="Комментарии2">
 
       <List>
+      {/* <ListSubheadeк component="div" id="nested-list-subheader">
+          Коментарии
+        </ListSubheader> */}
         {items.map((obj, index) => (
           index === editCommentIndex ? (
             <AddComment key={index} editingComent={obj} index={index}/>

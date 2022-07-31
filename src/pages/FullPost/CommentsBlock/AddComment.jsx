@@ -39,7 +39,7 @@ export const AddComment = ({ editingComent, isCreationComment, index }) => {
       <div className={styles.root}>
         {curentUserData?.avatarUrl && <Avatar
           classes={{ root: styles.avatar }}
-          src={`http://localhost:4444${curentUserData.avatarUrl}`}
+          src={`${process.env.REACT_APP_API_URL}${curentUserData.avatarUrl}`}
         />}
         <form className={styles.form}>
           <TextField

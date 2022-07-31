@@ -50,7 +50,7 @@ export const FullPostInfo = ({
       {curentPostData.imageUrl && (
         <img
           className={styles.image}
-          src={`http://localhost:4444${curentPostData.imageUrl}`}
+          src={`${process.env.REACT_APP_API_URL}${curentPostData.imageUrl}`}
           alt={curentPostData.title}
         />
       )}

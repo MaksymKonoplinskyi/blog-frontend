@@ -81,7 +81,7 @@ export const Profile = (values) => {
               Удалить аватар
             </Button>
             <Avatar className={styles.avatar} sx={{ width: 150, height: 150 }} alt={'Uploaded'}
-              src={`http://localhost:4444${avatarUrl}`} />
+              src={`${process.env.REACT_APP_API_URL}${avatarUrl}`} />
 
           </>
         )}

@@ -7,7 +7,6 @@ import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
 import List from "@mui/material/List";
 import { CommentEditMenu } from "./CommentEditMenu";
-import { SideBlock } from "../../../components";
 import { AddComment } from "./AddComment";
 import { useSelector } from "react-redux";
 import styles from './CommentsBlock.module.scss'
@@ -17,7 +16,7 @@ export const CommentsBlock = ({ items, curentUserId }) => {
   const editCommentIndex = useSelector(
     state => state.fullPost.comments.editCommentIndex)
   return (
-    <SideBlock title="Комментарии">
+    <Paper title="Комментарии">
 
       <List>
         {items.map((obj, index) => (
@@ -46,6 +45,6 @@ export const CommentsBlock = ({ items, curentUserId }) => {
         ))}
       </List>
       {(editCommentIndex === null) && <AddComment isCreationComment={true} />}
-    </SideBlock>
+    </Paper>
   );
 };

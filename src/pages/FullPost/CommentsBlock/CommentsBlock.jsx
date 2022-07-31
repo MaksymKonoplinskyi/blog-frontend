@@ -11,6 +11,7 @@ import { CommentEditMenu } from "./CommentEditMenu";
 import { AddComment } from "./AddComment";
 import { useSelector } from "react-redux";
 import styles from './CommentsBlock.module.scss'
+import { ListSubheader } from "@mui/material";
 
 
 export const CommentsBlock = ({ items, curentUserId }) => {
@@ -20,12 +21,12 @@ export const CommentsBlock = ({ items, curentUserId }) => {
     <Paper title="Комментарии2">
 
       <List>
-      {/* <ListSubheadeк component="div" id="nested-list-subheader">
+        <ListSubheader component="div" id="nested-list-subheader">
           Коментарии
-        </ListSubheader> */}
+        </ListSubheader>
         {items.map((obj, index) => (
           index === editCommentIndex ? (
-            <AddComment key={index} editingComent={obj} index={index}/>
+            <AddComment key={index} editingComent={obj} index={index} />
           ) : (
             <React.Fragment key={index}>
               <ListItem className={styles.ListItem} alignItems="flex-start">

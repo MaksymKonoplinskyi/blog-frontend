@@ -43,8 +43,8 @@ export const AddComment = ({ editingComent, isCreationComment, index }) => {
         />}
         <form className={styles.form}>
           <TextField
-            label="Написать комментарий"
-            variant="outlined"
+            label={curentUserData ? 'Написать комментарий' : 'Войдите, чтобы оставить комментарий'}
+            variant='outlined'
             maxRows={10}
             type='comentText'
             multiline
@@ -53,7 +53,7 @@ export const AddComment = ({ editingComent, isCreationComment, index }) => {
             onChange={(e) => setText(e.target.value)}
           />
           {isCreationComment ? (
-            <Button onClick={onClickSend} variant="contained">Отправить</Button>
+            <Button onClick={onClickSend} disabled={!curentUserData} variant="contained">Отправить</Button>
           ) : (<>
             <Button onClick={onClickSave} variant="contained">Сохранить</Button>
             <Button onClick={onClickCancel} variant="contained">Отменить</Button>

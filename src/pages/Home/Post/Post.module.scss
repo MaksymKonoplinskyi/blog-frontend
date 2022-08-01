@@ -1,29 +1,18 @@
-$blue: #4361ee;
-
 .root {
   background-color: #fff;
-  // border: 1px solid #dedede;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 15px;
   position: relative;
 
   &:hover {
-    // border: 1px solid $blue;
-    // box-shadow: 0 0 0 1px $blue;
+
 
     .editButtons {
       opacity: 1;
     }
   }
 
-  &Full {
-    &:hover {
-      background-color: #fff;
-      border: 1px solid #dedede;
-      box-shadow: none;
-    }
-  }
 }
 
 .image {
@@ -35,10 +24,6 @@ $blue: #4361ee;
     cursor: pointer;
   }
 
-  // &Full {
-  //   min-height: 300px;
-  //   height: 100%;
-  // }
 }
 
 .content {
@@ -64,11 +49,6 @@ $blue: #4361ee;
       cursor: pointer;
     }
 
-
-  &Full {
-    font-size: 42px;
-    font-weight: 900;
-  }
 }
 .countWithIcon {
   &:hover {

@@ -1,6 +1,10 @@
+.image {
+  width: 100%;
+}
+
 .title {
   input {
-    font-size: 60px;
+    font-size: 32px;
     font-weight: 900;
   }
 
@@ -13,14 +17,12 @@
   }
 }
 
-.image {
-  width: 100%;
-}
+
 
 .tags {
   input {
     margin: 15px 0;
-    font-size: 30px;
+    font-size: 18px;
   }
 }
 

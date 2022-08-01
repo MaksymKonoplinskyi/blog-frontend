@@ -25,13 +25,18 @@ export const Header = () => {
     <div className={styles.header}>
       <Container maxWidth="lg">
         <div className={styles.inner}>
-          <Link className={styles.logo} to="/">
-            <div>Maxim BLOG</div>
+          <Link  to="/">
+            <div >
+              <img className={styles.logo} src={'/logo.png'} alt={'logo'}/>
+            </div>
+            
           </Link>
           <div className={styles.buttons}>
             {isAuth ? (
               <>
-                <Button onClick={() => navigate('/add-post')} variant="contained" color="warning" >Написать статью</Button>
+                <Button onClick={() => navigate('/add-post')} variant="contained" color="warning" >
+                 <span>Написать</span> 
+                  </Button>
                 <Button onClick={onClickLogout} variant="contained" color="info">
                   Выйти
                 </Button>
@@ -49,7 +54,7 @@ export const Header = () => {
                 <Button onClick={() => navigate('/login')} 
                 variant="outlined">Войти</Button>
                 <Button onClick={() => navigate('/register')} 
-                variant="contained">Создать аккаунт</Button>
+                variant="contained">Регистрация</Button>
               </>
             )}
           </div>

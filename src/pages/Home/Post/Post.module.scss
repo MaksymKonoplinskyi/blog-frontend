@@ -31,10 +31,14 @@ $blue: #4361ee;
   height: 300px;
   object-fit: cover;
 
-  &Full {
-    min-height: 300px;
-    height: 100%;
+  &:hover {
+    cursor: pointer;
   }
+
+  // &Full {
+  //   min-height: 300px;
+  //   height: 100%;
+  // }
 }
 
 .content {
@@ -47,27 +51,31 @@ $blue: #4361ee;
 }
 
 .wrapper {
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 .title {
   font-size: 22px;
   margin: 0;
 
-  a {
-    text-decoration: none;
-    color: #000;
+
 
     &:hover {
-      color: #000;
+      cursor: pointer;
     }
-  }
+
 
   &Full {
     font-size: 42px;
     font-weight: 900;
   }
 }
+.countWithIcon {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 
 .tags {
   list-style: none;
